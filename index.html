@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/css/Normalize.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Roboto+Slab:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="assets/images/vr_logo.svg"
       rel="shortcut icon"
@@ -23,19 +31,19 @@
         />
         <h2 class="header-logo__title">ВИАРУШКА</h2>
       </div>
-      <button>Корзина</button>
+      <button class="button">Корзина</button>
     </header>
     <main class="main">
-      <h1>Возможности</h1>
+      <h1 class="main__title">ВОЗМОЖНОСТИ</h1>
       <div class="main-cards">
         <div class="main-cards-row">
-          <section class="main-cards-row-card">
+          <section class="main-cards-row-card main-cards-row-card_red">
             <img
               class="main-cards-row-card__image"
               alt="Картинка карточки"
               src="assets/images/without_wires.svg"
             />
-            <h2 class="main-cards-row-card__title">Без проводов</h2>
+            <h2 class="main-cards-row-card__title">БЕЗ ПРОВОДОВ</h2>
             <p class="main-cards-row-card__text">
               Шлем работает без проводов. Не нужен ни компьютер, ни внешнее
               питание, ни большое помещение, чтобы расставить трекеры.
@@ -47,7 +55,7 @@
               alt="Картинка карточки"
               src="assets/images/without_computer.svg"
             />
-            <h2 class="main-cards-row-card__title">Без компьютера</h2>
+            <h2 class="main-cards-row-card__title">БЕЗ КОМПЬЮТЕРА</h2>
             <p class="main-cards-row-card__text">
               Современным VR-шлемам нужен мощный компьютер, чтобы запускать
               игры. Наш шлем запускает игры из облака, поэтому просто
@@ -60,7 +68,7 @@
               alt="Картинка карточки"
               src="assets/images/ten_hours.svg"
             />
-            <h2 class="main-cards-row-card__title">До 10 часов работы</h2>
+            <h2 class="main-cards-row-card__title">ДО 10 ЧАСОВ РАБОТЫ</h2>
             <p class="main-cards-row-card__text">
               Несмотря на компактность и производительность, шлем может работать
               до 10 часов — даже, если вы играете в самые ресурсоемкие игры.
@@ -68,8 +76,8 @@
           </section>
         </div>
         <div class="main-cards-row">
-          <section class="main-cards-row-card">
-            <h2 class="main-cards-row-card__title">Сотни игр</h2>
+          <section class="main-cards-row-card main-cards-row-card_red">
+            <h2 class="main-cards-row-card__title">СОТНИ ИГР</h2>
             <p class="main-cards-row-card__text">
               Уже сейчас вам доступно более сотни игр: от высокобюджетных
               ААА-тайтлов до маленьких независимых проектов. Скоро их станет еще
@@ -77,21 +85,29 @@
             </p>
           </section>
           <section class="main-cards-row-card">
-            <h2 class="main-cards-row-card__title">Почти даром</h2>
+            <h2 class="main-cards-row-card__title">ПОЧТИ ДАРОМ</h2>
             <p class="main-cards-row-card__text">
               По сравнению с другими VR-шлемами наш стоит гораздо меньше. И вы
               существенно экономите на мощном компьютере.
             </p>
           </section>
-          <section>Новости</section>
+          <section class="main-cards-row-card main-cards-row-card_news">
+            <h2 class="main-cards-row-card__title main-cards-row-card__title_news">НОВОСТИ</h2>
+            <div class="main-cards-row-card-subscription">
+                <input class="main-cards-row-card-subscription__email" placeholder="Эл. почта" type="text">
+                <button class="button">Подписаться</button>
+            </div>
+          </section>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <a class="footer__link">Возможности</a>
-      <a class="footer__link">Где купить</a>
-      <a class="footer__link">Доставка</a>
-      <a class="footer__link">Помощь</a>
+      <nav class="footer-nav">
+        <a class="footer-nav__link">Возможности</a>
+        <a class="footer-nav__link">Где купить</a>
+        <a class="footer-nav__link">Доставка</a>
+        <a class="footer-nav__link">Помощь</a>
+      </nav>
     </footer>
   </body>
 </html>

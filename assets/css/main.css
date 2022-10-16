@@ -1,17 +1,53 @@
+/* Common styles */
+
 .body{
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    color: #000000;
 }
+
+.button{
+    width: 135px;
+    height: 38px;
+
+    background: #5222D0;
+    border-radius: 100px;
+
+    font-size: 13px;
+    line-height: 13px;
+
+    color: #FFFFFF;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
 
 /* Header */
 
 .header{
     display: flex;
     justify-content: space-between;
+
+    padding: 20px 60px;
 }
 
 .header-logo{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 200px;
+
+    height: 10vh;
+}
+
+.header-logo__image{
+    width: 40px;
+    height: 40px;
 }
 
 /* Main */
@@ -19,16 +55,97 @@
 .main{
     display: flex;
     flex-direction: column;
+
+    padding: 10px 60px;
+}
+
+.main__title{
+    padding-left: 40px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 120%;
 }
 
 .main-cards-row{
     display: flex;
+    justify-content: space-around;
 }
 
+.main-cards-row-card{
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    width: 25vw;
+}
+
+.main-cards-row-card_red{
+    border: 1px solid #BB2247;
+}
+
+.main-cards-row-card_news{
+    padding: 10px;
+    
+    background-color: #EC615B;
+}
+
+.main-cards-row-card__title{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+}
+
+.main-cards-row-card__title_news{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+    
+    color: #FFFFFF;
+}
+
+.main-cards-row-card__text{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.main-cards-row-card-subscription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 40%;
+}
+
+.main-cards-row-card-subscription__email{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+}
 
 
 /* Footer */
 .footer{
-    display: flex;
+    padding: 40px 60px;
+    height: 10vh;
 }
 
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+
+    width: 40%;
+}
+
+.footer-nav__link{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.footer-nav__link:hover{
+    color: #2f2e2e;
+    cursor: pointer;
+}
