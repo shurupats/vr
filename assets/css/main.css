@@ -1,0 +1,34 @@
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+    display: flex;
+}
+
+/* Main */
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-cards-row{
+    display: flex;
+}
+
+
+
+/* Footer */
+.footer{
+    display: flex;
+}
+
